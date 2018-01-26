@@ -6,6 +6,7 @@ class Slider extends DomElement<Slider>{
         this.
             setType("range")
         this.fromStored
+        this.c("slider")
     }    
     get toJsonText():string{
         return JSON.stringify(this,["id","value"],2)

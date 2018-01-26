@@ -1,4 +1,12 @@
 :root{
+    --fontsize: 15;
+    --fontsizerem: 15rem;
+
+    --sliderrelwidth: 8;
+    --sliderrelheight: 0.6;
+    --sliderthumbrelwidth: 1;
+    --sliderthumbrelheight: 2;
+
     --draggablewindowwidth: 400;
     --draggablewindowheight: 200;
 
@@ -178,4 +186,33 @@
     border-radius: 5rem;
     padding: 5rem;
     color:#111;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: calc( var(--fontsizerem) * var(--sliderrelwidth) );
+    height: calc( var(--fontsizerem) * var(--sliderrelheight) );
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: calc( ( ( var(--fontsizerem) * var(--sliderthumbrelheight) ) - calc( var(--fontsizerem) * var(--sliderrelheight) ) ) / 2 );
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc( var(--fontsizerem) * var(--sliderthumbrelwidth) );
+    height: calc( var(--fontsizerem) * var(--sliderthumbrelheight) );
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: calc( var(--fontsizerem) * var(--sliderthumbrelwidth) );
+    height: calc( var(--fontsizerem) * var(--sliderthumbrelheight) );
+    background: #4CAF50;
+    cursor: pointer;
 }

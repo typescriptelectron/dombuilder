@@ -1,4 +1,5 @@
-let FONT_SIZE=15
+let FONT_SIZE=getCssFloatProperty("--fontsize",15)
+
 let DEBUG=true
 
 let conslog=(content:string)=>console.log(content)
