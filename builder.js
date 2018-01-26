@@ -152,7 +152,7 @@ class Arrow {
         this.svg = pg.reportSvg(params["color"]);
     }
 }
-let FONT_SIZE = 15;
+let FONT_SIZE = getCssFloatProperty("--fontsize", 15);
 let DEBUG = true;
 let conslog = (content) => console.log(content);
 function getGeneralScrollBarWidthPx() {
@@ -754,6 +754,7 @@ class Slider extends DomElement {
         this.
             setType("range");
         this.fromStored;
+        this.c("slider");
     }
     get toJsonText() {
         return JSON.stringify(this, ["id", "value"], 2);
