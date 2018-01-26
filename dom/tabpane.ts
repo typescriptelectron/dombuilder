@@ -94,10 +94,10 @@ class Tabpane extends DomElement<Tabpane>{
         return this.build()
     }
     divWidthCorrection():number{
-        return getCssFloatProperty("--tabpanedivwidthcorrection",16)
+        return getCssFloatProperty("--tabpanedivwidthcorrection",18)
     }
     divHeightCorrection():number{
-        return getCssFloatProperty("--tabpanedivheightcorrection",25)
+        return getCssFloatProperty("--tabpanedivheightcorrection",28)
     }
     divwidth:number
     divheight:number

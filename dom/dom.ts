@@ -18,7 +18,7 @@ function registerForWindowResizeEvent(e:DomElement<any>){
 }
 
 function getGeneralWindowWidthCorrectionPx(){
-    return getCssFloatProperty("--windowwidthcorrection",1)
+    return getCssFloatProperty("--windowwidthcorrection",5)
 }
 
 function getGeneralWindowWidthCorrectionRem(){
@@ -26,7 +26,7 @@ function getGeneralWindowWidthCorrectionRem(){
 }
 
 function getGeneralWindowHeightCorrectionPx(){
-    return getCssFloatProperty("--windowheightcorrection",1)
+    return getCssFloatProperty("--windowheightcorrection",5)
 }
 
 function getGeneralWindowHeightCorrectionRem(){
