@@ -1,0 +1,27 @@
+{
+  "name": "DOMBuilder",
+  "version": "1.0.0",
+  "description": "Build DOM in Javascript using custom components.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/typescriptelectron/dombuilder",
+  "keywords": [
+    "DOM",
+    "build",
+    "Javascript",
+    "custom",
+    "component"
+  ],
+  "author": "Dom Maker",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.11"
+  },
+  "dependencies": {
+    "@types/node": "^9.3.0",
+    "axios": "^0.17.1",
+    "electron-is-dev": "^0.3.0"
+  }
+}
