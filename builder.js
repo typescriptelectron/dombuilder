@@ -166,13 +166,13 @@ function registerForWindowResizeEvent(e) {
     windowResizeEventRecipients.push(e);
 }
 function getGeneralWindowWidthCorrectionPx() {
-    return getCssFloatProperty("--windowwidthcorrection", 1);
+    return getCssFloatProperty("--windowwidthcorrection", 5);
 }
 function getGeneralWindowWidthCorrectionRem() {
     return getGeneralWindowWidthCorrectionPx() / SCALE_FACTOR();
 }
 function getGeneralWindowHeightCorrectionPx() {
-    return getCssFloatProperty("--windowheightcorrection", 1);
+    return getCssFloatProperty("--windowheightcorrection", 5);
 }
 function getGeneralWindowHeightCorrectionRem() {
     return getGeneralWindowHeightCorrectionPx() / SCALE_FACTOR();
@@ -1291,10 +1291,10 @@ class Tabpane extends DomElement {
         return this.build();
     }
     divWidthCorrection() {
-        return getCssFloatProperty("--tabpanedivwidthcorrection", 16);
+        return getCssFloatProperty("--tabpanedivwidthcorrection", 18);
     }
     divHeightCorrection() {
-        return getCssFloatProperty("--tabpanedivheightcorrection", 25);
+        return getCssFloatProperty("--tabpanedivheightcorrection", 28);
     }
     build() {
         if (this.snaptowindow) {
